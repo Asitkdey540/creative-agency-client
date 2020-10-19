@@ -1,0 +1,21 @@
+.service-header{
+    font-weight: 700;
+}
+
+.service-color{
+    color: #91bf76;
+}
+
+.service-card{
+    border: none;
+}
+
+.service-card:hover{
+    box-shadow: 0 20px 20px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
+    transition: 0.8s;
+}
+
+.feedback-card:hover{
+    box-shadow: 0 20px 20px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
+    transition: 1s;
+}
