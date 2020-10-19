@@ -16,7 +16,7 @@ const AdminServiceList = () => {
     const user = JSON.parse(sessionStorage.getItem('user'))
     const [orderdServices, setOrderdServices] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:3003/allOrderdServices`)
+        fetch(`https://serene-tor-85624.herokuapp.com/allOrderdServices`)
             .then(response => response.json())
             .then(data => {
                 setOrderdServices(data);

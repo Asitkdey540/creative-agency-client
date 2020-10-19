@@ -39,7 +39,7 @@ const Order = () => {
     //     formData.append('price', info.price)
     //     formData.append('file', uploadFile)
 
-    //     fetch('http://localhost:3003/userOrder', {
+    //     fetch('https://serene-tor-85624.herokuapp.com/userOrder', {
     //         method: 'POST',
     //         body: formData
     //     })

@@ -9,7 +9,7 @@ const Service = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:3003/allServices')
+        fetch('https://serene-tor-85624.herokuapp.com/allServices')
             .then(res => res.json())
             .then(data => {
                 setAllServiceData(data)

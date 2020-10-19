@@ -17,7 +17,7 @@ const OrderForm = ({ userandService }) => {
         }
         // console.log(orderData)
 
-        fetch('http://localhost:3003/addOrder', {
+        fetch('https://serene-tor-85624.herokuapp.com/addOrder', {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(orderData)

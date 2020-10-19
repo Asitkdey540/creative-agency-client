@@ -8,7 +8,7 @@ const ReviewFrom = ({ user }) => {
 
     const onSubmit = (data, e) => {
         const reviewData = { ...data, img: user.photoURL }
-        fetch('http://localhost:3003/addReview', {
+        fetch('https://serene-tor-85624.herokuapp.com/addReview', {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(reviewData)

@@ -30,7 +30,7 @@ const Login = () => {
                 setSignedInUser(newUser);
                 // storeAuthToken();
 
-                fetch(`http://localhost:3003/admin?email=${result.user.email}`)
+                fetch(`https://serene-tor-85624.herokuapp.com/admin?email=${result.user.email}`)
                     .then(response => response.json())
                     .then(data => {
                         if (data.length === 0) {

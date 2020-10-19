@@ -38,7 +38,7 @@ const Feedback = () => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:3003/allReviews')
+        fetch('https://serene-tor-85624.herokuapp.com/allReviews')
             .then(res => res.json())
             .then(data => {
                 setReviews(data)
@@ -67,7 +67,7 @@ const Feedback = () => {
     //     formData.append('review', info.review)
     //     formData.append('file', uploadFile)
 
-    //     fetch('http://localhost:3003/addReviewDetail', {
+    //     fetch('https://serene-tor-85624.herokuapp.com/addReviewDetail', {
     //         method: 'POST',
     //         body: formData
     //     })

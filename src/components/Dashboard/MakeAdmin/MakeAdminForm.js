@@ -6,7 +6,7 @@ const MakeAdminForm = () => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data, e) => {
-        fetch('http://localhost:3003/addAdmin', {
+        fetch('https://serene-tor-85624.herokuapp.com/addAdmin', {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)

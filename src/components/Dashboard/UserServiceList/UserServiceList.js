@@ -18,7 +18,7 @@ const UserServiceList = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:3003/orderdServices?email=${user.email}`)
+        fetch(`https://serene-tor-85624.herokuapp.com/orderdServices?email=${user.email}`)
             .then(response => response.json())
             .then(data => {
                 setOrderdService(data)

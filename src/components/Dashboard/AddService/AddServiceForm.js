@@ -11,7 +11,7 @@ const AddServiceForm = () => {
         formData.append('file', data.file[0])
         formData.append('title', data.title)
         formData.append('description', data.description)
-        fetch('http://localhost:3003/addService', {
+        fetch('https://serene-tor-85624.herokuapp.com/addService', {
             method: 'POST',
             body: formData
         })

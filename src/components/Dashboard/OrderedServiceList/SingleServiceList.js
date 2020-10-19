@@ -5,7 +5,7 @@ const SingleServiceList = ({ orderedServices }) => {
 
     const { name, orderdEmail, serviceName, details, status, _id } = orderedServices
     const statusHandeler = (value, id) => {
-        fetch(`http://localhost:3003/updateStatus/${id}`, {
+        fetch(`https://serene-tor-85624.herokuapp.com/updateStatus/${id}`, {
             method: 'PATCH',
             body: JSON.stringify({ value }),
             headers: { "Content-Type": "application/json" }
